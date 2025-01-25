@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @keyframes rotate {
+            0% { transform: rotateY(0deg); }
+            50% { transform: rotateY(180deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        
+        .rotate-3d {
+            animation: rotate 5s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-transparent p-6 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-4xl font-extrabold text-orange-500 hover:scale-110 transition-all duration-300">Fazil</a>
+            <nav class="space-x-8">
+                <a href="#" class="text-xl text-white hover:text-orange-500 hover:border-b-4 hover:border-orange-500 transition-all duration-300">Home</a>
+                <a href="#skills" class="text-xl text-white hover:text-orange-500 hover:border-b-4 hover:border-orange-500 transition-all duration-300">Skills</a>
+                <a href="#services" class="text-xl text-white hover:text-orange-500 hover:border-b-4 hover:border-orange-500 transition-all duration-300">Services</a>
+                <a href="#portfolio" class="text-xl text-white hover:text-orange-500 hover:border-b-4 hover:border-orange-500 transition-all duration-300">Portfolio</a>
+                <a href="#contact" class="text-xl text-white hover:text-orange-500 hover:border-b-4 hover:border-orange-500 transition-all duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="flex items-center justify-center h-screen gap-16 bg-gray-900 text-white px-16 md:px-6">
+        <div class="text-center space-y-4 max-w-lg">
+            <h1 class="text-6xl font-bold leading-tight">Hi, I'm <span class="text-orange-500">Mohamad Fazil</span></h1>
+            <h3 class="text-4xl font-semibold">I'm a <span class="typing-text inline-block text-orange-500">Software Developer</span></h3>
+            <p class="text-lg">Welcome to my portfolio! I'm a passionate software developer specializing in creating impactful solutions through technology. Let's build something amazing together!</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="https://linkedin.com" target="_blank" class="p-4 bg-orange-500 rounded-full text-black hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/fazil-09" target="_blank" class="p-4 bg-orange-500 rounded-full text-black hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a href="https://x.com/PMohamadFa14918" target="_blank" class="p-4 bg-orange-500 rounded-full text-black hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/nyx.xan/" target="_blank" class="p-4 bg-orange-500 rounded-full text-black hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+            </div>
+            <a href="#contact" class="mt-8 inline-block px-6 py-3 bg-orange-500 text-black rounded-full text-lg font-semibold transition-all duration-300 hover:bg-black hover:text-orange-500 hover:scale-110">Hire Me</a>
+        </div>
+        <div class="rotate-3d transform transition-all duration-500 hover:rotate-3d">
+            <img src="main.jpg" alt="Profile Picture" class="w-72 h-72 rounded-full border-8 border-orange-500 shadow-2xl hover:scale-105 transition-all duration-300">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-800 py-20 px-16 md:px-6">
+        <h2 class="text-4xl text-center text-orange-500 font-semibold mb-8">My Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                <h3 class="text-2xl text-orange-500 mb-4">Frontend Development</h3>
+                <p>HTML, CSS, JavaScript, React.js, Tailwind CSS</p>
+            </div>
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                <h3 class="text-2xl text-orange-500 mb-4">Backend Development</h3>
+                <p>Node.js, Express.js, Django</p>
+            </div>
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                <h3 class="text-2xl text-orange-500 mb-4">Programming Languages</h3>
+                <p>Python, C++, JavaScript</p>
+            </div>
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                <h3 class="text-2xl text-orange-500 mb-4">Database Management</h3>
+                <p>MySQL, MongoDB</p>
+            </div>
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                <h3 class="text-2xl text-orange-500 mb-4">Version Control</h3>
+                <p>Git, GitHub</p>
+            </div>
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                <h3 class="text-2xl text-orange-500 mb-4">Other Tools</h3>
+                <p>Figma, VS Code, Postman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800 px-16 md:px-6">
+        <h2 class="text-4xl text-center text-orange-500 font-semibold mb-8">Services</h2>
+        <ul class="list-disc pl-10 text-xl text-white space-y-4">
+            <li>Custom Web Development</li>
+            <li>Responsive Design</li>
+            <li>Backend API Integration</li>
+            <li>Database Management</li>
+            <li>Technical Consulting</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 px-16 md:px-6">
+        <h2 class="text-4xl text-center text-orange-500 font-semibold mb-8">Contact</h2>
+        <p class="text-xl text-center text-white mb-4">If you'd like to work together or have any inquiries, feel free to reach out:</p>
+        <p class="text-center text-lg text-white">Email: <a href="mailto:pmohamadfazil@gmail.com" class="text-orange-500">pmohamadfazil@gmail.com</a></p>
+    </section>
+</body>
+</html>
